@@ -5,7 +5,14 @@
   <meta name="viewport" content="width=device-width">
   <title>JavaScript Χειρισμός λαθών</title>
   <style>
- 
+#myerror{
+ color:orange;
+ font-size:22px;
+ border:1px solid gray;
+ padding:2px;
+ margin:10px;
+ width:250px;
+ }
 </style>
  
 </head>
@@ -21,8 +28,8 @@ allert("Παράδειγμα διαχείρισης λαθών")
 catch(err){
 var myer=document.querySelector("#myerror");
 myer.innerHTML=err.message;
-myer.style.color="orange";
-myer.style.fontSize="30px";
+//myer.style.color="orange";
+//myer.style.fontSize="30px";
 }
 </script>
 </body>
