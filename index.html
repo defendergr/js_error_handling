@@ -14,7 +14,16 @@
 <p>Παράδειγμα χρήσης των εντολών try και catch</p>
 <p id="myerror"></p>
 <script>
-alert("Παράδειγμα διαχείρισης λαθών")
+try{
+allert("Παράδειγμα διαχείρισης λαθών")
+}
+
+catch(err){
+var myer=document.querySelector("#myerror");
+myer.innerHTML=err.message;
+myer.style.color="orange";
+myer.style.fontSize="30px";
+}
 </script>
 </body>
 </html>
